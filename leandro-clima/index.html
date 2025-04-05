@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Previsão do Tempo | Meu Clima</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Descubra Agora o Clima da Sua Cidade!</h1>
+      <p>Veja a previsão do tempo da sua cidade</p>
+      <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Alternar tema</button>
+    </header>
+
+    <main>
+      <form id="weather-form">
+        <input type="text" id="city" placeholder="Digite o nome da cidade..." required />
+        <button type="submit">🔍 Buscar</button>
+      </form>
+
+      <div id="weather-result" class="card"></div>
+      <div id="map" class="map"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Meu Clima | Desenvolvido por Leandro Gustavo</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
